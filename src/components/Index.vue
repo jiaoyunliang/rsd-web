@@ -68,8 +68,8 @@
     return {
       formLabelWidth: "120px",
       userObject: {
-        userName: "",
-        password: "",
+        userName: "admin",
+        password: "123456",
         sysId: 1
       },
       rules: {
@@ -95,7 +95,7 @@
               if (rs.result === 200) {
                 _this.$router.options.routes = [];
                 _this.$router.addRoutes([]);
-                // console.log("routes a", _this.$router.options.routes);
+                //console.log("routes a", _this.$router.options.routes);
                 _this.$store.dispatch("userLogin", rs.data);
                 _this.$store.dispatch("generateRoutes", rs.data.menu);
                 _this.$router.options.routes.push(

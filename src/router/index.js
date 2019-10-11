@@ -47,7 +47,7 @@ let routes = [
   ...generateRoutesFromMenu(menus),
   {
     path: "*",
-    // redirect: "/index"
+    //redirect: "/index",
     component: NotFound
   }
 ];

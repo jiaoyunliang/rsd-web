@@ -95,9 +95,10 @@
                 :true-label="trueLabel"
                 :false-label="falseLabel"
                 disabled
-                >海虹</el-checkbox
+              >后台
+              </el-checkbox
               >
-              <el-checkbox
+              <!--el-checkbox
                 v-model="currentNode.hospitalFlag"
                 :true-label="trueLabel"
                 :false-label="falseLabel"
@@ -110,7 +111,7 @@
                 :false-label="falseLabel"
                 disabled
                 >企业</el-checkbox
-              >
+              -->
             </td>
           </tr>
           <tr>

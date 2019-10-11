@@ -137,7 +137,7 @@
             this.menu = JSON.parse(menusJsonStr)[0].children;
 
             this.activeIndex = this.$route.query.c;
-            this.setbreadcrumbName(this.activeIndex);
+            //this.setbreadcrumbName(this.activeIndex);
           } else {
             this.$notify.error({
               title: "提示",
@@ -149,10 +149,6 @@
         .catch(err => {
           console.log("api validateToken error", err);
         });
-    },
-    handleJumpMsg: function(key, keyPath) {
-      this.$router.push({ path: "/manager/accountApply", query: { c: key } });
-      this.handleSelect(key, keyPath);
     },
     handleSelect: function(key, keyPath) {
       this.activeIndex = key;
