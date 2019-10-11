@@ -104,7 +104,7 @@
   components: { modifyPwd },
   data() {
     return {
-      msg: "帮你找后台管理",
+      msg: "后台管理",
       dialogTitle: "",
       isShowDialog: false,
       activeIndex: "",
